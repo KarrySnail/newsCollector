@@ -22,6 +22,9 @@ dependencies:
     version: 4.5.0(vue@3.5.13)
 
 devDependencies:
+  '@tailwindcss/typography':
+    specifier: ^0.5.16
+    version: 0.5.16(tailwindcss@3.4.17)
   '@vitejs/plugin-vue':
     specifier: ^4.2.3
     version: 4.6.2(vite@4.5.9)(vue@3.5.13)
@@ -29,13 +32,13 @@ devDependencies:
     specifier: ^3.3.4
     version: 3.5.13
   autoprefixer:
-    specifier: ^10.4.14
+    specifier: ^10.4.20
     version: 10.4.20(postcss@8.5.3)
   postcss:
-    specifier: ^8.4.27
+    specifier: ^8.5.3
     version: 8.5.3
   tailwindcss:
-    specifier: ^3.3.3
+    specifier: ^3.4.17
     version: 3.4.17
   vite:
     specifier: ^4.4.9
@@ -336,6 +339,18 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@tailwindcss/typography@0.5.16(tailwindcss@3.4.17):
+    resolution: {integrity: sha512-0wDLwCVF5V3x3b1SGXPCDcdsbDHMBe+lkFzBRaHeLvNi+nrrnZ1lA18u+OTWO8iSWU2GxUOCvlXtDuqftc1oiA==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || insiders || >=4.0.0-alpha.20 || >=4.0.0-beta.1'
+    dependencies:
+      lodash.castarray: 4.4.0
+      lodash.isplainobject: 4.0.6
+      lodash.merge: 4.6.2
+      postcss-selector-parser: 6.0.10
+      tailwindcss: 3.4.17
+    dev: true
 
   /@types/web-bluetooth@0.0.20:
     resolution: {integrity: sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==}
@@ -985,6 +1000,18 @@ packages:
     resolution: {integrity: sha1-7KKE910pZQeTCdwK2SVauy68FjI=}
     dev: true
 
+  /lodash.castarray@4.4.0:
+    resolution: {integrity: sha1-wCUTUV4wna3dTCTGDP3c9ZdtkRU=}
+    dev: true
+
+  /lodash.isplainobject@4.0.6:
+    resolution: {integrity: sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=}
+    dev: true
+
+  /lodash.merge@4.6.2:
+    resolution: {integrity: sha1-VYqlO0O2YeGSWgr9+japoQhf5Xo=}
+    dev: true
+
   /lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
     dev: true
@@ -1163,6 +1190,14 @@ packages:
     dependencies:
       postcss: 8.5.3
       postcss-selector-parser: 6.1.2
+    dev: true
+
+  /postcss-selector-parser@6.0.10:
+    resolution: {integrity: sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w==}
+    engines: {node: '>=4'}
+    dependencies:
+      cssesc: 3.0.0
+      util-deprecate: 1.0.2
     dev: true
 
   /postcss-selector-parser@6.1.2:

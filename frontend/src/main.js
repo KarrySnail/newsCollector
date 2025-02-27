@@ -4,6 +4,8 @@ import { createHead } from '@vueuse/head'
 import App from './App.vue'
 import Home from './views/Home.vue'
 import Article from './views/Article.vue'
+import CozeTest from './views/CozeTest.vue'
+import CozeBiaoQingBao from './views/CozeBiaoQingBao.vue'
 import './assets/styles/main.css'
 
 const router = createRouter({
@@ -18,6 +20,16 @@ const router = createRouter({
       path: '/article/:id',
       name: 'article',
       component: Article
+    },
+    {
+      path: '/coze-test',
+      name: 'coze-test',
+      component: CozeTest
+    },
+    {
+      path: '/biaoqingbao',
+      name: 'biaoqingbao',
+      component: CozeBiaoQingBao
     }
   ]
 })
